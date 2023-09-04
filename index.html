@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="only screen"/>
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+  
+</head>
+
+<body>
+  <header class="firstheader">
+    <img class="heading-logo" src="images/logo.svg" alt="logo">
+    <div class="score-box-header">
+        <h4 class="heading-custom">Score</h4>
+        <span class="header__value">12</span>
+    </div>
+  </header>
+ 
+  <main>
+    <!-- Game Container -->
+    <div class="game-body">
+    <img class="bg-triangle" src="images/bg-triangle.svg" alt="BG Triangle">
+     
+    <!-- Game paper -->
+    <div class="game-body__circle-container-paper">
+      <div class="game-body__big-circle game-body__big-circle--dark-blue">
+          <div class="game-body__big-circle game-body__big-circle--light-blue"></div>
+          <div class="game-body__tiny-circle game-body__tiny-circle--dark-white">
+              <div class="game-body__tiny-circle game-body__tiny-circle--light-white"></div>
+          </div>
+          <img class="icon-paper" src="images/icon-paper.svg" alt="BG Triangle">
+         
+      </div>
+  </div>
+
+<!-- Game Scissors -->
+<div class="game-body__circle-container-scissors">
+  <div class="game-body__big-circle game-body__big-circle--dark-yellow">
+      <div class="game-body__big-circle game-body__big-circle--light-yellow"></div>
+      <div class="game-body__tiny-circle game-body__tiny-circle--dark-white">
+          <div class="game-body__tiny-circle game-body__tiny-circle--light-white"></div>
+      </div>
+      <img class="icon-scissors" src="images/icon-scissors.svg" alt="BG icon-scissors">  
+  </div>
+</div>
+
+<!-- Game Rock -->
+<div class="game-body__circle-container-rock">
+  <div class="game-body__big-circle game-body__big-circle--dark-red">
+      <div class="game-body__big-circle game-body__big-circle--light-red"></div>
+      <div class="game-body__tiny-circle game-body__tiny-circle--dark-white">
+          <div class="game-body__tiny-circle game-body__tiny-circle--light-white"></div>
+      </div>
+      <img class="icon-rock" src="images/icon-rock.svg" alt="BG icon-rock">  
+    </div>
+</div>
+
+  <!-- BIG Circle -->
+  <div class="choosed-item--com__bg-circle"></div>
+</div>
+<a href="#" class="rules-btn">Rules</a>
+</main>
+<div class="rules-popup">
+  <h3 class="rules-heading">Rules</h3> 
+  <div class="rules-content"><img  src="images/image-rules.svg" alt="BG rule-content"></div>
+  <div class="close-icon"><img  src="images/icon-close.svg" alt="BG icon-rock"></div>
+</div>
+  <script src="main.js"></script>
+<div class="overlay"></div>
+  <div class="attribution">
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emmanuel palm</a>.
+  </div>
+  
+</body>
+</html>
